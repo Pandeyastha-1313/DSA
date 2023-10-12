@@ -1,0 +1,16 @@
+#  BINARY SEARCH ALGORITHM
+
+def generate_range_with_difference(range_size):
+    if range_size < 0:
+        return []
+    numbers = []
+    current_number = 0
+    
+    while current_number <= range_size:
+        numbers.append(current_number)
+        current_number +=2
+    return numbers
+
+specified_range = 20
+result = generate_range_with_difference(specified_range)
+print(result)
